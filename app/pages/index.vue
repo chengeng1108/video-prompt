@@ -15,7 +15,7 @@ const outputRef = ref<HTMLElement | null>(null)
 const selectedModel = ref('gpt-5.3-codex')
 const MODELS = [
   { id: 'gpt-5.1-codex-mini', label: 'GPT Mini', tag: '经济' },
-  { id: 'gpt-5.3-codex', label: 'GPT Codex', tag: '' },
+  { id: 'gpt-5.3-codex', label: 'GPT 5.3', tag: '均衡' },
   { id: 'gpt-5.4', label: 'GPT-5.4', tag: '旗舰' },
 ]
 

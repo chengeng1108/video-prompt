@@ -1,1 +1,27 @@
+# 环境变量
 .env
+.env.*
+!.env.example
+
+# 依赖
+node_modules/
+
+# Nuxt 构建产物
+.nuxt/
+.output/
+dist/
+
+# 缓存
+.cache/
+.parcel-cache/
+
+# Claude Code
+.claude/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 日志
+*.log
+npm-debug.log*

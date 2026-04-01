@@ -14,7 +14,7 @@ const outputRef = ref<HTMLElement | null>(null)
 
 const selectedModel = ref('gpt-5.3-codex')
 const MODELS = [
-  { id: 'gpt-5.1-codex-mini', label: 'GPT Mini', tag: '经济' },
+  { id: 'gpt-5.1-codex-mini', label: 'GPT 5.1', tag: '经济' },
   { id: 'gpt-5.3-codex', label: 'GPT 5.3', tag: '均衡' },
   { id: 'gpt-5.4', label: 'GPT-5.4', tag: '旗舰' },
 ]
@@ -199,7 +199,7 @@ function fallbackCopy(text: string) {
       <!-- 输入区 -->
       <div class="input-block">
         <!-- 模型选择 -->
-        <div class="model-selector">
+        <div class="model-selector" v-show="false">
           <button
             v-for="m in MODELS"
             :key="m.id"
